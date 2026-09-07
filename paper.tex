@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+﻿\documentclass[a4paper,12pt]{article}
 
 \usepackage[russian]{babel}
 \usepackage{cmap}
@@ -66,19 +66,19 @@
 		\item По пресс-формам (\texttt{mold\_id}): $\chi^2 = 23{,}28$,  = 0{,}016$ (различия высокозначимы; форма № 9 демонстрирует повышенный брак 13,97\%).
 	\end{itemize}
 
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{pictures/fig1_bar_shift_batch.png}
+		\caption{Распределение доли брака по базовым категориальным факторам: а — по сменам; б — по пресс-формам; в — по партиям}
+	\end{figure}
+
 	\subsection{Двухфакторный анализ и синергия брака}
 	Анализ сопряженности факторов «Смена $\times$ Форма» выявил резкую нелинейность ($\chi^2 = 72{,}39$,  = 0{,}00021$). В дневную смену № 2 пресс-форма № 9 обеспечивает нормативный уровень брака 7,10\%, тогда как в ночную смену № 3 уровень брака достигает критических \textbf{24,16\%} (относительный риск  = 2{,}99$,  = 4{,}67 \cdot 10^{-12}$).
 
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[width=0.85\linewidth]{pictures/fig1_bar_shift_batch.png}
-		\caption{Столбчатая диаграмма распределения брака по сменным факторам и оснастке}
-	\end{figure}
-
-	\begin{figure}[!h]
-		\centering
-		\includegraphics[width=0.85\linewidth]{pictures/fig3_heatmap_categorical_interactions.png}
-		\caption{Тепловая карта риска брака в координатах «Смена $\times$ Пресс-форма»}
+		\includegraphics[width=0.9\linewidth]{pictures/fig5_defect_types_distribution.png}
+		\caption{Структура дефектов: а — Парето-диаграмма общей выборки; б — сопоставление рисков дефектов (RR) в проблемной группе и вне ее}
 	\end{figure}
 
 	\section{Анализ технологических параметров в проблемной группе}
@@ -92,8 +92,20 @@
 
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[width=0.85\linewidth]{pictures/fig4_technological_parameters_comparison.png}
-		\caption{Сравнение технологических параметров в проблемной группе и вне ее}
+		\includegraphics[width=0.9\linewidth]{pictures/fig4_technological_parameters_comparison.png}
+		\caption{Мультипанельное сравнение параметров: а — температура заливки; б — скорость охлаждения; в — время выдержки; г — газосодержание}
+	\end{figure}
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{pictures/fig2_boxplot_temperature.png}
+		\caption{Распределение температуры заливки: а — годные vs брак; б — по видам дефектов; в — проблемная группа vs фон}
+	\end{figure}
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.75\linewidth]{pictures/fig6_correlation_matrix.png}
+		\caption{Корреляционная матрица Пирсона для параметров процесса литья и показателей неразрушающего контроля}
 	\end{figure}
 
 	\section{Выводы и инженерные рекомендации}
