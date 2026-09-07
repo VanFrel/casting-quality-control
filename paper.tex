@@ -1,4 +1,4 @@
-﻿\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 \usepackage[russian]{babel}
 \usepackage{cmap}
@@ -54,9 +54,9 @@
 	
 	\subsection{Информационный изоморфизм}
 	Оценка взаимной информации между кодом партии и номером плавки показала строгое взаимно-однозначное соответствие:
-	
+	\[
 	I(\text{melting\_id}; \text{batch\_code}) = H(\text{batch\_code}) = 3{,}689\text{ бит}.
-	
+	\]
 	Это позволило редуцировать исходное 4-мерное пространство объемом 57 600 состояний до 3D-матрицы объемом 1 440 ячеек.
 
 	\subsection{Однофакторный скрининг}
@@ -77,7 +77,7 @@
 
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[width=0.9\linewidth]{pictures/fig5_defect_types_distribution.png}
+		\includegraphics[width=0.9\linewidth]{pictures/fig4_defect_types_distribution.png}
 		\caption{Структура дефектов: а — Парето-диаграмма общей выборки; б — сопоставление рисков дефектов (RR) в проблемной группе и вне ее}
 	\end{figure}
 
@@ -92,7 +92,7 @@
 
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[width=0.9\linewidth]{pictures/fig4_technological_parameters_comparison.png}
+		\includegraphics[width=0.9\linewidth]{pictures/fig3_technological_parameters_comparison.png}
 		\caption{Мультипанельное сравнение параметров: а — температура заливки; б — скорость охлаждения; в — время выдержки; г — газосодержание}
 	\end{figure}
 
@@ -104,7 +104,7 @@
 
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[width=0.75\linewidth]{pictures/fig6_correlation_matrix.png}
+		\includegraphics[width=0.75\linewidth]{pictures/fig5_correlation_matrix.png}
 		\caption{Корреляционная матрица Пирсона для параметров процесса литья и показателей неразрушающего контроля}
 	\end{figure}
 
